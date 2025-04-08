@@ -1,7 +1,7 @@
 #include "Task.h"
 #include <iostream>
 
-Task::Task(const std::string &name, const std::string &description,
+Task::Task(const std::string& name, const std::string& description,
            const std::vector<std::string> &requiredResourcesNames, int durationInUnits)
            : Executable(name, description, requiredResourcesNames, durationInUnits)
            {}

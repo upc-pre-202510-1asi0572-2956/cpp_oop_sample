@@ -14,7 +14,7 @@ protected:
     std::vector<Resource*> assignedResources;
 public:
     Executable(
-            std::string  name,
+            const std::string&  name,
             std::string  description,
             const std::vector<std::string>& requiredResourcesNames,
             int durationInUnits);

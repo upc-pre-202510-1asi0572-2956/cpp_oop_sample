@@ -4,9 +4,9 @@
 #include <algorithm>
 #include <utility>
 
-Executable::Executable(std::string name, std::string description,
+Executable::Executable(const std::string& name, const std::string description,
                        const std::vector<std::string> &requiredResourcesNames, int durationInUnits)
-        : name(std::move(name)),
+        : name(name),
           description(std::move(description)),
           requiredResourcesNames(requiredResourcesNames),
           durationInUnits(durationInUnits), assignedResources() {
