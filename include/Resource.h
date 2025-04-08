@@ -17,7 +17,7 @@ public:
     [[nodiscard]] virtual bool isAvailableForUse() const = 0;
     [[nodiscard]] Type getResourceType() const;
     virtual void allocate() = 0;
-    virtual void use() = 0;
+    virtual void use() const = 0;
     virtual void release() = 0;
 };
 #endif //RESOURCE_H
