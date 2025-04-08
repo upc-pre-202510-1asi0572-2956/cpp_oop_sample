@@ -16,7 +16,8 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(SOURCES
         main.cpp
         src/Resource.cpp
-        src/ConsumableResource.cpp)
+        src/ConsumableResource.cpp
+        src/UsableResource.cpp)
 
 # Define the executable target
 add_executable(cpp_oop_sample ${SOURCES})
