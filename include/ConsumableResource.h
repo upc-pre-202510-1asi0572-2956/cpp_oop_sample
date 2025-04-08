@@ -12,7 +12,7 @@ public:
                        int capacity);
     [[nodiscard]] bool isAvailableForUse() const override;
     void allocate() override;
-    void use() override;
+    void use() const override;
     void release() override;
     [[nodiscard]] int getRemainingCapacity() const;
 };
